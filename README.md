@@ -7,6 +7,7 @@ Para utilizar este proyecto no requiere instalación previa.
 ## Descripción
 
 **Clases**
+
 La clase Producto representa a los productos del almacén. La información de un producto es su nombre, descripción, categoría, precio y stock(cantidad almacenada en el almacén).
 
 La clase Categoria es un enumerado con los distintos valores de categoría de un producto.
@@ -14,6 +15,7 @@ La clase Categoria es un enumerado con los distintos valores de categoría de un
 En la clase ProductoService se encuentran las funcionalidades que se podrán realizar en la gestión de productos. En ella además se asignan unos productos por defecto para poder tener unos datos iniciales.
 
 **Servlets**
+
 El servlet ListarServlet proporciona la lógica necesaria para mostrar los productos disponibles.
 
 El servlet DarAltaServlet proporciona la lógica necesaria para dar de alta a un producto.
@@ -25,6 +27,7 @@ El servlet ModificarServlet proporciona la lógica necesaria para modificar un p
 El servlet BuscarServlet proporciona la lógica necesaria para buscar productos específicos.
 
 **Archivos jsp**
+
 El contenido de alta.jsp se muestra cuando se quiere dar de alta un producto.
 
 El contenido de altacorrecto.jsp se muestra cuando se da de alta un producto correctamente.
