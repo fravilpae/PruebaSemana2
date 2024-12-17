@@ -12,8 +12,7 @@
 </head>
 <body>
 <%List<Producto> productos = (List<Producto>) request.getAttribute("productos"); %>
-<%String error = (String) request.getAttribute("errorMensaje");
-List<Categoria> categorias = ProductoService.obtenerCategorias();%>
+<%List<Categoria> categorias = ProductoService.obtenerCategorias();%>
 <form action="ModificarServlet" method="post">
 <h2>Seleccione el producto a modificar:</h2>
 Producto: <select name="index">
@@ -33,8 +32,5 @@ Precio del producto: <input type="number" step="any" name="precio"><br>
 Stock: <input type="number" name="stock"><br>
 <input type="submit" value="Modificar producto">
 </form>
-<%if (error != null) {%>
-	<p style="color:red"><%=error%></p>
-<%} %>
 </body>
 </html>
